@@ -220,7 +220,7 @@ h1, h2{
 }
 .projects .project-list .project-item{
     background-color: var(--section-contrast);
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 8px;
     transition: transform 0.3s ease;
     display: flex;
@@ -354,10 +354,6 @@ footer a:hover{
         width: 100%;
         padding: 35px;
     }
-    .projects .project-item .btn-container{
-        display: flex;
-        gap: 10px;
-    }
 }
 @media (max-width: 703px){
     .hero{
@@ -365,9 +361,5 @@ footer a:hover{
     }
     #header ul{
         visibility: hidden;
-    }
-    .projects .project-item .btn-container{
-        display: flex;
-        gap: 10px;
     }
 }
