@@ -355,6 +355,11 @@ footer a:hover{
         width: 100%;
         padding: 35px;
     }
+    footer{
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    }
 }
 @media (max-width: 703px){
     .hero{
@@ -362,5 +367,10 @@ footer a:hover{
     }
     #header ul{
         visibility: hidden;
+    }
+    footer{
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
     }
 }
