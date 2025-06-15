@@ -92,7 +92,6 @@ h1, h2{
         color: var(--bg-clr);
     }
 }
-  
 .hero .hero-left .cta-button span{
     display: flex;
     justify-content: center;
@@ -164,7 +163,7 @@ h1, h2{
 
 .hero .hero-right .socials-group ul li a:hover{
     color: var(--accent-clr);
-    background-color: white;
+    background-color: black;
 }
 .about{
     background-color: var(--section-contrast);
@@ -216,12 +215,12 @@ h1, h2{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
-    /* overflow-y: auto; */
+    place-items: center;
     padding: 1em;
 }
 .projects .project-list .project-item{
     background-color: var(--section-contrast);
-    padding: 1.5em;
+    padding: 2em;
     border-radius: 8px;
     transition: transform 0.3s ease;
     display: flex;
@@ -233,39 +232,36 @@ h1, h2{
 main .projects .project-list .project-item:hover{
     transform: scale(1.05);
 }
+.projects .project-list .project-item h1{
+    text-align: center;
+}
 main .projects .project-list .project-item button{
-    background-color: var(--accent-clr);
-    color: var(--bg-clr);
+    background-color: var(--primary-clr);
     border: none;
     padding: 0.8em 1em;
     border-radius: 8px;
     margin-right: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-main .projects .project-list .project-item button span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color: var(--bg-clr);
-    transition: color 0.3s ease;
-}
-main .projects .project-list .project-item button span:hover{
-    color: var(--text-clr);
+    a{
+        transition: color 0.3 ease;
+    }
 }
 main .projects .project-list .project-item button:hover{
-    background-color: var(--primary-clr);
+    background-color: var(--accent-clr);
+    a{
+        color: var(--bg-clr);
+    }
 }
 main .projects .project-list .project-item button a{
     text-decoration: none;
-    color: var(--bg-clr);
+    color: var(--text-clr);
     font-weight: 550;
     font-size: 1em;
     transition: color 0.3s ease;
 }
 main .projects .project-list .project-item button a:hover{
-    color: var(--text-clr);
+    color: var(--bg-clr);
 }
 .contact{
     background-color: var(--bg-clr);
@@ -335,11 +331,22 @@ footer{
     padding: 8px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 footer p{
     color: var(--text-clr);
     font-size: 1em;
 }
+footer a{
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    color: var(--text-clr);
+}
+footer a:hover{
+    color: var(--accent-clr);
+}
+
 
 @media (max-width: 841px){
     .hero{
