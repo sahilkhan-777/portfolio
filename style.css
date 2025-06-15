@@ -228,6 +228,7 @@ h1, h2{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin: 0 auto;
 }
 main .projects .project-list .project-item:hover{
     transform: scale(1.05);
