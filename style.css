@@ -354,6 +354,10 @@ footer a:hover{
         width: 100%;
         padding: 35px;
     }
+    .projects .project-item .btn-container{
+        display: flex;
+        gap: 10px;
+    }
 }
 @media (max-width: 703px){
     .hero{
@@ -361,5 +365,9 @@ footer a:hover{
     }
     #header ul{
         visibility: hidden;
+    }
+    .projects .project-item .btn-container{
+        display: flex;
+        gap: 10px;
     }
 }
