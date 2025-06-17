@@ -108,7 +108,8 @@ h2 {
     i {
         color: var(--bg-clr);
     }
-    a{
+
+    a {
         color: var(--bg-clr);
     }
 }
@@ -260,7 +261,8 @@ h2 {
     scroll-snap-type: x mandatory;
     scroll-padding: 1rem;
 }
-.projects>button{
+
+.projects>button {
     padding: 25px 10px;
     width: 50px;
     border: none;
@@ -271,25 +273,30 @@ h2 {
     color: var(--primary-clr);
     font-size: 2.5rem;
 }
-.projects>button:hover{
+
+.projects>button:hover {
     opacity: 0.3;
 }
-.projects #left-scroll{
+
+.projects #left-scroll {
     position: absolute;
     left: 0;
     top: 0;
 }
-.projects #right-scroll{
+
+.projects #right-scroll {
     position: absolute;
     right: 0;
     top: 0;
 }
+
 .projects .project-list::-webkit-scrollbar {
-    display: none;
+    visibility: hidden;
 }
 
 .projects .project-item {
-    flex: 0 0 350px; /* fixed width for each card */
+    flex: 0 0 350px;
+    /* fixed width for each card */
     min-width: 350px;
     min-height: 300px;
     display: flex;
@@ -312,11 +319,13 @@ h2 {
 .projects .project-list .project-item h1 {
     text-align: center;
 }
-.projects .project-list .project-item .btn-container{
+
+.projects .project-list .project-item .btn-container {
     display: flex;
     gap: 10px;
     margin-top: 16px;
 }
+
 .projects .project-list .project-item button {
     background-color: var(--primary-clr);
     border: none;
@@ -466,5 +475,20 @@ footer a:hover {
 
     #header ul {
         visibility: hidden;
+    }
+
+    .projects .project-list::-webkit-scrollbar {
+        visibility: visible;
+        height: 8px;
+        background-color: var(--section-contrast);
+        border-radius: 16px;
+    }
+    .projects .project-list{
+        scroll-snap-type: x mandatory;
+    }
+
+    .projects .project-list::-webkit-scrollbar-thumb {
+        background-color: var(--primary-clr);
+        border-radius: 16px;
     }
 }
