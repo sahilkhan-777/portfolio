@@ -9,6 +9,7 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -30,11 +31,9 @@
                 <h1>Hi,<br><span id="h1-i">Iam</span><br><span id="h1-ii">Sahil Khan</span></h1>
                 <p>I am a Frontend Developer proficient in making cleaner and modern websites.</p>
                 <button class="cta-button">
-                    <span>
-                        Download Resume
-                        <i class="fa-solid fa-file-arrow-down"></i>
-                    </span>
-                    <a href="#" target="_blank"></a>
+                    <a href="#" target="_blank">
+                        <span>Download Resume <i class="fa-solid fa-file-arrow-down"></i></span>
+                    </a>
                 </button>
             </div>
             <div class="hero-right">
@@ -42,16 +41,16 @@
                 <div class="socials-group">
                     <ul>
                         <li>
-                            <a href="https://github.com/sahilkhan-777"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/sahilkhan-777" title="Github"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-twitter icon"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter icon"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in icon"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +59,7 @@
         <div class="about" id="about">
             <h2>About Me</h2>
             <p>I am a Frontend Developer skilled in making cleaner and modern websites for all purposes. I have
-                completed my Bachelor's Degree on Computer Applications and I am currently pursuing my Masters on the
+                completed my Bachelor's Degree on Computer Applications and I am currently pursuing my Masters in the
                 same feild.<br>I have the following set of skills: </p>
             <div class="skills">
                 <span><i class="fa-brands fa-html5"></i></span>
@@ -72,17 +71,15 @@
         </div>
         <div class="projects">
             <h1>My Projects</h1>
+            <button id="left-scroll"><i class="fa-solid fa-caret-left"></i></button>
             <div class="project-list">
                 <div class="project-item">
                     <h2><i class="fa-solid fa-gamepad"></i> Guess Game</h2>
                     <p>A JavaScript-based number guessing game where the player tries to match the number randomly
                         chosen by the computer to win.</p>
-                    <div class="btn-container"><button class="code-view"><a
-                                    href="https://github.com/sahilkhan-777/guess-number-game" class="project-link"
-                                    target="_blank"><i class="fa-solid fa-code"></i> View Code</a></button>
-                        <button class="live-prev"><a
-                                    href="https://sahilkhan-777.github.io/guess-number-game" class="project-link"
-                                    target="_blank"><i class="fa-solid fa-eye"></i> Live Preview</a></button>
+                    <div class="btn-container">
+                        <button class="code-view"><a href="https://github.com/sahilkhan-777/guess-number-game" class="project-link" target="_blank"><i class="fa-solid fa-code"></i> View Code</a></button>
+                        <button class="live-prev"><a href="https://sahilkhan-777.github.io/guess-number-game" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> Live Preview</a></button>
                     </div>
                 </div>
                 <div class="project-item">
@@ -123,21 +120,22 @@
                     </div>
                 </div>
             </div>
+            <button id="right-scroll"><i class="fa-solid fa-caret-right"></i></button>
         </div>
         <div class="contact" id="contact">
             <h2>Contact Me</h2>
             <form action="https://formspree.io/f/mldneblp" method="POST">
                 <div class="group">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" autocomplete="on">
+                    <input type="text" name="name" id="name" autocomplete="on" required>
                 </div>
                 <div class="group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" autocomplete="on">
+                    <input type="email" name="email" id="email" autocomplete="on" required>
                 </div>
                 <div class="group">
                     <label for="phone">Phone Number</label>
-                    <input type="number" name="phone" id="phone" maxlength="10" autocomplete="on">
+                    <input type="number" name="phone" id="phone" maxlength="10" autocomplete="on" required>
                 </div>
                 <div class="group">
                     <label for="message">Message</label>
