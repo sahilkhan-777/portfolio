@@ -484,7 +484,7 @@ footer a:hover {
         border-radius: 16px;
     }
     .projects .project-list{
-        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
 
     .projects .project-list::-webkit-scrollbar-thumb {
