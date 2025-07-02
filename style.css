@@ -492,3 +492,10 @@ footer a:hover {
         border-radius: 16px;
     }
 }
+
+@media (max-width: 420px){
+    .projects #left-scroll,
+    .projects #right-scroll {
+        display: none;
+    }
+}
