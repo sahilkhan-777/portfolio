@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary-clr: #4b0082;
-    --accent-clr: #00ffff;
-    --text-clr: #e0e0e0;
-    --bg-clr: #1c1c1c;
-    --section-contrast: #151515;
+    --primary-clr: #0f172a;
+    --accent-clr: #3b82f6;
+    --text-clr: #f8fafc;
+    --bg-clr: #020617;
+    --section-contrast: #1e293b;
 }
 
 body {
@@ -32,6 +32,9 @@ h2 {
     padding: 1em;
     border-bottom: 1px solid var(--accent-clr);
     border-top: 1px solid var(--accent-clr);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
 }
 
 #header .info-section ul {
@@ -53,7 +56,7 @@ h2 {
 
 .hero {
     background-color: var(--bg-clr);
-    padding: 3em 2.5em;
+    padding: 5em 2.5em;
     border-bottom: 1px solid var(--accent-clr);
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +182,6 @@ h2 {
 .hero .hero-right .socials-group ul li a {
     font-size: 1.5em;
     color: var(--accent-clr);
-    opacity: 0.8;
     transition: all 1s ease;
     border: 1px solid var(--accent-clr);
     padding: 10px;
@@ -193,8 +195,8 @@ h2 {
 }
 
 .hero .hero-right .socials-group ul li a:hover {
-    color: var(--accent-clr);
-    background-color: black;
+    color: var(--primary-clr);
+    background-color: var(--accent-clr);
 }
 
 .about {
@@ -432,7 +434,7 @@ textarea:focus {
 }
 
 .contact form button:hover {
-    background-color: #5a0083;
+    background-color: var(--accent-clr);
 }
 
 footer {
@@ -473,7 +475,7 @@ footer a:hover {
         flex-direction: column-reverse;
     }
 
-    #header ul {
+    #header{
         visibility: hidden;
     }
 
